@@ -46,7 +46,7 @@ C) print() ponieważ zwraca pewną wartość.
 D) Żadne z powyższych.
 
 4. Dlaczego w Programowaniu Funkcyjnym chętniej stosuje się rekurencję niż iterowanie w pętli?
-A) Ponieważ nie modyfikuje obecnego stanu programu poprzez eliminację niezależnych pętli. - this is poprawne
+A) Ponieważ nie modyfikuje obecnego stanu programu i eliminuje niezależne pętle. - this is poprawne
 B) Ponieważ zawsze działa szybciej niż iteracja.
 C) Ponieważ jest prościej szukać błędów (debugging).
 D) Ponieważ zużywa mniej pamięci w porównaniu do pętli.
