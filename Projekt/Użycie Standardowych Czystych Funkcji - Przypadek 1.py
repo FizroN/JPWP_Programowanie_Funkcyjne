@@ -35,28 +35,29 @@ class Conductor(Person):
                 self.Allow()
 
 
-passengers = [
-    Passenger("Bartek", "Gawel", "student", 21, False),
-    Passenger("Karol", "Gawelek", "student", 20, True),
-    Passenger("Ferdynand", "Kiepski", "senior", 80, True),
-    Passenger("Janusz", "Kowalski", None, 34, False)
-]
-conductor = Conductor("Albert", "Abramczuk", 44)
-for p in passengers:
-    """if p.status is not None:
-        if p.status == "student":
-            print("Please show me the student ID")
-            if p.has_document:
-                print("Okay, have a nice trip")
-            else:
-                print("I'm sorry, but you don't have proper rights to exemption")
-        elif p.status == "senior":
-            print("Please show me a document confirming a senior status")
-            if p.has_document:
-                print("Okay, have a nice trip")
-    else:
-        print("Okay, have a nice trip")"""
-    if p.status is not None:
-        conductor.Check(p)
-    else:
-        conductor.Allow()
+if __name__ == "__main__":
+    passengers = [
+        Passenger("Bartek", "Gawel", "student", 21, False),
+        Passenger("Karol", "Gawelek", "student", 20, True),
+        Passenger("Ferdynand", "Kiepski", "senior", 80, True),
+        Passenger("Janusz", "Kowalski", None, 34, False)
+    ]
+    conductor = Conductor("Albert", "Abramczuk", 44)
+    for p in passengers:
+        """if p.status is not None:
+            if p.status == "student":
+                print("Please show me the student ID")
+                if p.has_document:
+                    print("Okay, have a nice trip")
+                else:
+                    print("I'm sorry, but you don't have proper rights to exemption")
+            elif p.status == "senior":
+                print("Please show me a document confirming a senior status")
+                if p.has_document:
+                    print("Okay, have a nice trip")
+        else:
+            print("Okay, have a nice trip")"""
+        if p.status is not None:
+            conductor.Check(p)
+        else:
+            conductor.Allow()
