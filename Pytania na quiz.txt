@@ -1,0 +1,59 @@
+1. Która z tych funkcji napisanych w języku Python nie jest czysta?
+
+A:
+def f1(x):
+    return x ** 2
+
+B:
+def f2(x):
+    print(x)
+    return x + 1
+
+C:
+def f3(x, y):
+    return x * y
+
+D:
+def f4():
+    return 42
+A) f1(x)
+B) f2(x) - this is poprawne
+C) f3(x, y)
+D) f4()
+
+
+
+2. Co się dzieje, kiedy próbujemy edytować krotkę w Pythonie?
+A) Zwraca błąd, ponieważ krotki są niezmienne. - this is poprawne
+B) Edycja zachodzi pomyślnie.
+C) Zwraca nową krotkę ze zmienionymi wartościami.
+D) Pozwala na edycję wtedy, gdy krotka zawiera zmienne elementy.
+
+
+3. Która linijka jest przykładem funkcji wyższego rzędu?
+
+def apply_twice(func, x):
+    return func(func(x))
+
+def square(n):
+    return n ** 2
+
+print(apply_twice(square, 2))
+
+A) apply_twice(square, 2), ponieważ przyjmuje funkcję jako argument. - this is poprawne
+B) square(n) ponieważ transformuje dane wejściowe. 
+C) print() ponieważ zwraca pewną wartość.
+D) Żadne z powyższych.
+
+4. Dlaczego w Programowaniu Funkcyjnym chętniej stosuje się rekurencję niż iterowanie w pętli?
+A) Ponieważ nie modyfikuje obecnego stanu programu i eliminuje niezależne pętle. - this is poprawne
+B) Ponieważ zawsze działa szybciej niż iteracja.
+C) Ponieważ jest prościej szukać błędów (debugging).
+D) Ponieważ zużywa mniej pamięci w porównaniu do pętli.
+
+5. Dlaczego Programowanie Funkcyjne sprawdza się bardzo dobrze w zrównoleglaniu obliczeń?
+A) Bo ten paradygmat nalega, aby nie zmieniać obecnego stanu, dzięki czemu nie ma problemów z uwspólnianymi danymi. - this is poprawne
+B) Bo stara się unikać rekurencji, dzięki czemu zrównoleglone obliczenia są szybsze.
+C) Bo używa dedykowanych pętli, które kontrolują przebieg zrównoleglonych obliczeń.
+D) Bo modyfikuje stan zmiennych, które są uwspólnione w pamięci, dzięki czemu obliczenia przebiegają szybciej.
+
