@@ -17,14 +17,14 @@ D:
 def f4():
     return 42
 A) f1(x)
-B) f2(x) - this is poprawne
+B) f2(x)
 C) f3(x, y)
 D) f4()
 
 
 
 2. Co się dzieje, kiedy próbujemy edytować krotkę w Pythonie?
-A) Zwraca błąd, ponieważ krotki są niezmienne. - this is poprawne
+A) Zwraca błąd, ponieważ krotki są niezmienne.
 B) Edycja zachodzi pomyślnie.
 C) Zwraca nową krotkę ze zmienionymi wartościami.
 D) Pozwala na edycję wtedy, gdy krotka zawiera zmienne elementy.
@@ -40,19 +40,19 @@ def square(n):
 
 print(apply_twice(square, 2))
 
-A) apply_twice(square, 2), ponieważ przyjmuje funkcję jako argument. - this is poprawne
+A) apply_twice(square, 2), ponieważ przyjmuje funkcję jako argument.
 B) square(n) ponieważ transformuje dane wejściowe. 
 C) print() ponieważ zwraca pewną wartość.
 D) Żadne z powyższych.
 
 4. Dlaczego w Programowaniu Funkcyjnym chętniej stosuje się rekurencję niż iterowanie w pętli?
-A) Ponieważ nie modyfikuje obecnego stanu programu i eliminuje niezależne pętle. - this is poprawne
+A) Ponieważ nie modyfikuje obecnego stanu programu i eliminuje niezależne pętle.
 B) Ponieważ zawsze działa szybciej niż iteracja.
 C) Ponieważ jest prościej szukać błędów (debugging).
 D) Ponieważ zużywa mniej pamięci w porównaniu do pętli.
 
 5. Dlaczego Programowanie Funkcyjne sprawdza się bardzo dobrze w zrównoleglaniu obliczeń?
-A) Bo ten paradygmat nalega, aby nie zmieniać obecnego stanu, dzięki czemu nie ma problemów z uwspólnianymi danymi. - this is poprawne
+A) Bo ten paradygmat nalega, aby nie zmieniać obecnego stanu, dzięki czemu nie ma problemów z uwspólnianymi danymi.
 B) Bo stara się unikać rekurencji, dzięki czemu zrównoleglone obliczenia są szybsze.
 C) Bo używa dedykowanych pętli, które kontrolują przebieg zrównoleglonych obliczeń.
 D) Bo modyfikuje stan zmiennych, które są uwspólnione w pamięci, dzięki czemu obliczenia przebiegają szybciej.
