@@ -32,8 +32,8 @@ def Prime(n):
 def Palindrome(s):
     i = 0
     j = len(s) - 1
-    while i < j:
-        if s[i].upper() == s[j].upper:
+    while i <= j:
+        if s[i] != s[j]:
             return False
         else:
             i += 1
@@ -77,16 +77,22 @@ if __name__ == "__main__":
     tab = [randint(0, N) for i in range(20)]
     print("\n\nNieposortowana tablica losowych liczb od 0 do 200:")
     Wypisz(tab)
+    A = tab[::]
     print("\nPosortowana tablica losowych liczb od 0 do 200 (z użyciem własnej funkcji):")
     stime = time()
-    Insert_Sort(tab)
+    Insert_Sort(A)
+    Wypisz(A)
     print(f"Czas wykonania: {time() - stime}")
-    Wypisz(tab)
+    A = tab[::]
     print("\nPosortowana tablica losowych liczb od 0 do 200 (z użyciem wbudowanej funkcji):")
     stime = time()
-    tab.sort()
-    Wypisz(tab)
+    A.sort()
+    Wypisz(A)
     print(f"Czas wykonania: {time() - stime}")
     s = input("\n\nTekst: ")
-    print(f"Czy {s} to palindrom (użycie własnej funkcji) - {"TAK" if Palindrome(s) else "NIE"}")
-    print(f"Czy {s} to palindrom (bez użycia własnej funckji) - {"TAK" if s == s[::-1] else "NIE"}")
+    stime = time()
+    print(f"Czy {s} to palindrom (użycie własnej funkcji) - {"TAK" if Palindrome(s.upper()) else "NIE"}")
+    print(f"Czas wykonania: {time() - stime}")
+    stime = time()
+    print(f"\nCzy {s} to palindrom (bez użycia własnej funckji) - {"TAK" if s.upper() == s[::-1].upper() else "NIE"}")
+    print(f"Czas wykonania: {time() - stime}")
